@@ -1,0 +1,37 @@
+---
+title: "my-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The steps to use this package are also simple:
+
+1. Start with: 
+```{r}
+library(wastewater.analyst)
+df=update()
+```
+
+This command can give you the data we need for this package.
+
+2. update the most recent data online:
+
+```{r}
+update()
+```
+
+3. You can use $choose.date(data,start_date,end_date)$ function to choose the time period you want for analyst
+
+4. You can use $pop.cal(data,datebreaks="1 month")$ function to calculate the weighted sum of Spline_WW_Weight. Also, it will give you a line plot.
+
+5. You can use $coh_data(data)$ function to limit your data at COH (city of Houston) areas.
+
+6. You can use $split.zip(data)$ to divide your data into different groups according to zipcodes.
+
+7. You can use $zip.puller(data,zipcodes)$ function to pull out the specific zip codes areas data.
+
+
+

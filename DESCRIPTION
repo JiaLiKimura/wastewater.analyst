@@ -1,0 +1,20 @@
+Package: wastewater.analyst
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Date: 2022-04-17
+Author: Jia Li
+Maintainer: Jia Li <jl5520@columbia.edu>
+Description: This package is used for wastewater analysis within COH (City Of Houston) Areas
+             Patients' Information is mainly from TMC (Texas Medical Center). 
+License: GPL
+Imports: ggplot2,tidyverse,dplyr,magrittr
+Encoding: UTF-8
+RoxygenNote: 7.1.2
+LazyData: true
+Depends: 
+    R (>= 2.10)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
